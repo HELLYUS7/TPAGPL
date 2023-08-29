@@ -22,6 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+    transition: 0.3s;
 }
 
 body {
@@ -68,42 +69,25 @@ nav ul li:hover {
 }
 
 .apresentation {
-    position: relative;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 100vh;
+    background-color: white;
+    height: 200px;
 }
 
-.result-test {
-    font-size: 34px;
+.apresentation a {
+    cursor: pointer;
+    font-size: 30px;
+    border: solid 3px black;
     padding: 20px;
-    color: white;
-    text-align: center;
     border-radius: 10px;
-    width: 50%;
-    height: 400px;
+    color: black;
+    text-decoration: none;
 }
 
-img {
-    top: -100px;
-    right: -300px;
-    position: absolute;
-    width: 1200px;
-}
-
-@font-face {
-    font-family: Barrio;
-    src: url(../assets/fonts/Minecraft.ttf)
-  }
-
-.porc {
-    top: 20px;
-    left: 13%;
-    position: absolute;
-    font-family: Barrio;
-    font-size: 140px;
+.apresentation a:hover {
+    background-color: black;
+    color: white;
 }
