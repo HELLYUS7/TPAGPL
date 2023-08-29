@@ -1,0 +1,91 @@
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: black;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+.apresentation {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.result-test {
+    font-size: 34px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+}
+
+img {
+    top: -100px;
+    right: -300px;
+    position: absolute;
+    width: 1200px;
+}
